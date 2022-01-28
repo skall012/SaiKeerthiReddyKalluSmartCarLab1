@@ -19,5 +19,10 @@ public class Camera {
 		//Captures images
 	}
 	
+	private void faceRecognition() {
+		
+		//Identifies faces
+	}
+	
 
 }
