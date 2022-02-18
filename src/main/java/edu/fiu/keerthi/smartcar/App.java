@@ -7,30 +7,31 @@ import edu.fiu.jit.SelfCheckCapable;
 import edu.fiu.jit.SelfCheckUtils;
 
 /**
- * @author keerthi
+ * @author Sai Keerthi Reddy
  *
  */
-public class Sensor implements SelfCheckCapable{
+public class App implements SelfCheckCapable {
 	
-	private String cost;
-	private String version;
+	private String name;
 	private String manufacturer;
+	private String price;
+	private String model;
 	
-	private void collectData() {
+	private void activateSmartCar() {
 		
-		// It collects data 
+		//Activates Smart car
 	}
 
 	@Override
 	public String getComponentName() {
 		// TODO Auto-generated method stub
-		return "Sensor";
+		return "App";
 	}
 
 	@Override
 	public boolean selfCheck() {
 		// TODO Auto-generated method stub
-	 return SelfCheckUtils.randomCheck(0.2);
+		return SelfCheckUtils.randomCheck(0.1);
 	}
 
 }

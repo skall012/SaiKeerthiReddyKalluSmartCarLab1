@@ -7,30 +7,29 @@ import edu.fiu.jit.SelfCheckCapable;
 import edu.fiu.jit.SelfCheckUtils;
 
 /**
- * @author keerthi
+ * @author Sai Keerthi Reddy
  *
  */
-public class Sensor implements SelfCheckCapable{
-	
-	private String cost;
+public class Server implements SelfCheckCapable {
+
 	private String version;
-	private String manufacturer;
+	private String network;
+	private String memory;
 	
-	private void collectData() {
+	private void update() {
 		
-		// It collects data 
+		//provides updates for RasberryPi
 	}
 
 	@Override
 	public String getComponentName() {
 		// TODO Auto-generated method stub
-		return "Sensor";
+		return "Server";
 	}
 
 	@Override
 	public boolean selfCheck() {
 		// TODO Auto-generated method stub
-	 return SelfCheckUtils.randomCheck(0.2);
+		return SelfCheckUtils.randomCheck(0.1);
 	}
-
 }
